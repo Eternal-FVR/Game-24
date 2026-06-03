@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Game 24</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="light red"></div>
+<div class="light blue"></div>
+<div class="light yellow"></div>
+
+<!-- SETTINGS -->
+<button id="gearBtn" onclick="toggleSettings()">⚙</button>
+
+<div id="settingsPanel" class="settings">
+  <h2>Settings</h2>
+  <input id="username" placeholder="Enter username" />
+  <button onclick="saveUser()">Save</button>
+</div>
+
+<!-- HEADER -->
+<div id="header">
+
+  <div class="timerWrap">
+    <svg class="circle" width="140" height="140">
+      <circle class="bg" cx="70" cy="70" r="60"></circle>
+      <circle class="progress" cx="70" cy="70" r="60"></circle>
+    </svg>
+    <div id="timerText">60</div>
+  </div>
+
+  <div id="welcome">
+    Welcome, <span id="userNameDisplay"></span>!
+  </div>
+
+  <div id="stats">
+    <div id="streakBox">🔥 Streak: 0</div>
+    <div id="scoreBox">🏆 Score: 0</div>
+  </div>
+
+</div>
+
+  <div id="stats"></div>
+
+</div>
+
+<!-- HOME -->
+<div id="homeScreen" class="screen active">
+  <div class="card">
+
+    <h1 class="title">GAME 24</h1>
+
+    <button onclick="startGame('easy')">Easy</button>
+    <button onclick="startGame('medium')">Medium</button>
+    <button onclick="startGame('hard')">Hard</button>
+
+    <hr style="margin:15px 0; opacity:0.2;">
+
+    <button onclick="setMode('speed')">⚡ Speed Mode</button>
+    <button onclick="setMode('competitive')">🏆 Competitive Mode</button>
+
+    <button onclick="showHowToPlay()"> How to Play</button>
+  </div>
+</div>
+
+<!-- GAME -->
+<div id="gameScreen" class="screen">
+  <div class="card">
+
+<div id="numbers"></div>
+
+<input id="answerInput" placeholder="Use ALL numbers to make 24" />
+
+<div class="gameButtons">
+  <button onclick="checkAnswer()">Check</button>
+  <button onclick="skip()">Skip</button>
+  <button onclick="backHome()">Back</button>
+</div>
+
+    <div id="solution"></div>
+
+  </div>
+</div>
+</div>
+
+<!-- HOW TO PLAY SCREEN -->
+<div id="howToPlayScreen" class="screen">
+
+  <div class="card" style="max-width:900px;">
+
+    <h1>How To Play</h1>
+
+    <p style="line-height:1.8; font-size:18px; text-align:left;">
+
+      The 24 Game is an arithmetical puzzle where the objective is to manipulate four numbers so that the final result equals exactly 24.
+      Players must use addition, subtraction, multiplication, division, squares and square roots, utilizing all four numbers exactly once.
+      In this game, you can choose between 3 game modes, Easy, Medium, and Hard, based on your skill.
+      There are also Wildcard modes, the Competitive Mode and Speed Mode. Within these modes,
+      you can use the 3 buttons, Skip, Check, and Back as well as a click on the spacebar to see how the computer solves the puzzle.
+      When Competitive mode is activated, by clicking it, you have to try to beat the amount of puzzles you can solve in 1 minute, essentially competing against yourself.
+      In Speed Round, the Game will ask you in a popup different time settings from 15 secs, 30 secs and 45 secs.
+      The Main object of the game is to finish many puzzles in little time. You can Also check your stats in the header, with the Streak and Score. Change your Name in the Settings bar!
+    
+      <br><br>
+
+      Happy Gaming!
+
+      <br><br>
+
+      — Siddarth Palvai
+
+    </p>
+
+    <div style="
+      margin-top:20px;
+      opacity:0.7;
+      font-size:14px;
+    ">
+      ™ Siddarthsatvik Palvai — All Rights Reserved 2026
+    </div>
+
+    <br>
+
+    <button onclick="backFromHowToPlay()">
+      Back
+    </button>
+
+  </div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
