@@ -48,8 +48,10 @@ https://docs.google.com/document/d/1uoGgbFKiqRSBlEtMt_49wGaTPx_U7UA0npt1Ow1kwmA/
 
 * Deployed the completed website using Netlify, allowing the game to be accessed online through a public URL from any device with internet access.
 * Performed final testing after deployment to ensure that all pages, game modes, timers, settings, and interactive features functioned correctly in the live environment.
- * Successfully transformed the original concept inspired by the MathCON Finals Game 24 into a fully functional web application that can be used by students and puzzle enthusiasts.
+* Successfully transformed the original concept inspired by the MathCON Finals Game 24 into a fully functional web application that can be used by students and puzzle enthusiasts.
 * Completed the project within the planned development timeline while gaining valuable experience in project planning, web development, debugging, deployment, and iterative improvement.
+* Though you can host websites through a variety of the different platforms, I used the simplest and easiest one, Netlify, All I had to do was drop the files into the field and it published it,
+you can also use Vercel, Github Pages, or google sites to help host your website, it all depends on preferance.
 
 # -- Daily Log --
 
