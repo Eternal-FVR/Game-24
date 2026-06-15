@@ -7,6 +7,8 @@ As part of my journey in creating this website and game, I have 6 stages, Requir
 Publish, each of which serving a crucial purpose in making the game the best. I wanted to push and work harder, and as I have made 
 websites before, I decided that I would have a deadline, I would start this project today, Monday 6/1/2026 and end it on Wednesday 6/3/2026.
 
+Game Link: https://amazing-game24.netlify.app/
+
 # Requirements
 
 When I first thought of this game I had a few requirments, to make it both functionally and asthetically pleasing;
